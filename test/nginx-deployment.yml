@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  revisionHistoryLimit: 5
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: registry.aliyuncs.com/marmot/nginx:1.11 
+        resources:
+          requests:
+            cpu: 400m
+        ports:
+        - containerPort: 80
