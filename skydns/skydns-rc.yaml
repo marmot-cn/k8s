@@ -80,6 +80,7 @@ spec:
           timeoutSeconds: 5
         args:
         # command = "/kube2sky"
+        - --kube_master_url=http://10.170.148.109:8080
         - --domain=cluster.local
       - name: skydns
         image: registry.aliyuncs.com/marmot/skydns:2015-10-13-8c72f8c

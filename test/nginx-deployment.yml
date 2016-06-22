@@ -15,6 +15,6 @@ spec:
         image: registry.aliyuncs.com/marmot/nginx:1.11 
         resources:
           requests:
-            cpu: 400m
+            cpu: 500m
         ports:
         - containerPort: 80

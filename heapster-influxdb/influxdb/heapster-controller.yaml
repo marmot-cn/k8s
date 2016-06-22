@@ -24,6 +24,6 @@ spec:
         imagePullPolicy: Always
         command:
         - /heapster
-        - --source=kubernetes:http://10.170.148.109:8080
+        - --source=kubernetes:http://120.25.87.35:8080
         - --sink=influxdb:http://monitoring-influxdb:8086
         - --v=4
